@@ -1,5 +1,5 @@
 # Academic
-Projects and assignments related to my education at UWO
+Projects related to my education at UWO
 
 ## Year 1
 - Computer Science 1026: Computer Science Fundamentals I

@@ -1,5 +1,5 @@
 # Academic
-Projects related to my education at UWO
+Projects related to my education at Western University 
 
 ## Year 1
 - Computer Science 1026: Computer Science Fundamentals I
@@ -16,3 +16,5 @@ Projects related to my education at UWO
 - Computer Science 3305: Operating Systems
 - Computer Science 3307: Object-Oriented Design and Analysis
 - Computer Science 3319: Databases I
+- Computer Science 3340: Analysis of Algorithms
+- Computer Science 3342: Programming Languages

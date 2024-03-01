@@ -1,0 +1,89 @@
+Answers for Lab 5
+-----------------------------------------------
+
+
+EXERCISE 1
+----------
+
+i) What do you think would be printed after the first invocation to method1 (Line 38)?
+ABDFG
+
+ii) What do you think would be printed after the second invocation to method1 (Line 43)?
+E
+
+iii) What do you think would be printed after the third invocation to method1 (Line 48)?
+ABCFG
+
+
+Was answer (i) incorrect? no
+Was answer (ii) incorrect? yes (ABEFG) -- I thought calling method with invalid arguments would cause an exception at the method call, it was not until the part of the method that required that argument that an error was raised 
+Was answer (iii) incorrect? no
+
+After commenting out line 10 and uncommenting line 11:
+i) What do you think would be printed after the first invocation to method1 (Line 38)?
+ABXCFG
+
+ii) What do you think would be printed after the second invocation to method1 (Line 43)?
+ABXCFG
+
+iii) What do you think would be printed after the third invocation to method1 (Line 48)?
+ABCFG
+
+
+Was answer (i) incorrect? no
+Was answer (ii) incorrect? no
+Was answer (iii) incorrect? no
+
+EXERCISE 2
+----------
+
+What line of the program causes the exception to be thrown?
+for (int j = 1; j <= 6, j++)
+
+Why did testArray[0][0] not change?
+It assigns the new number to testArray[0][1] and not testArray[0][0] because j is set to start at 1
+
+After pressing F6 until testArray[0][5] changes value from 0 to 5 and the statement for (int j=1; j<=6; j++) is highlighted in green,
+    - what are the values of i and j? 0 and 6
+	
+	- is it correct that the program tries to store the value (i+1)*j in testArray[i][j]? No, as the j index goes from 0 to 5 and not 1 to 6
+	
+EXERCISE 3
+----------
+
+Which line of the program causes the exception to be thrown?
+total = (1*100) / load -- division by zero error 
+
+Which line is highligted after pressing F6?
+i = process(2)
+
+After re-running the program which line is highligter after pressing F5?
+int i = 1l
+
+What is the differentce between F5 and F6?
+F6 treats the method call as one line. F5 gets to the method call and goes to the method definition and starts running through it line by line. 
+
+What are the values of variables i, step, result and Load?
+i = 4, step = -468. result = 472, load = 0
+
+Why does the program crash after pressing F6?
+The value of load is 0. This line divides by load, which is equal to zero right now, causing an arithmetic error of dividing by zero. 
+
+EXERCISE 4
+----------
+
+Why is there a compilation error in line 27?
+The variable i is declared within the for loop so it only exists within the loop. It does not exist after the loop has ended and cannot be set to a different value. 
+	
+What do you think will be the values of variables var1 and obj1 immediately after method2(obj1) is executed?
+It will be -20 while obj1 will still refer to a MyObject object with name = "joe" 
+
+What do you think will be the values of variables var1 and obj1 immediately after method1(obj1) is executed?
+While obj1 will still refer to a MyObject object with name = "joe", var1 will still be -20
+
+
+What are the correct values of variables var1 and obj1 immediately after method2(obj1) is executed?
+It is -20 while obj1 refers to a MyObject object with name = "joe" 
+
+Why is the result of the comparison (obj1 == obj2) false even though both obj1 and obj2 contain the same information, namely "joe"? 
+The two objects have the same name but as there is no equals method defined it will return false as they are separate objects and do not point o the same place in memory. 

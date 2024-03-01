@@ -1,0 +1,144 @@
+<?php
+
+include "connecttodb.php";
+
+/* See if user specified special queries, if not set default values */
+if (isset($_POST["course-offering-view"])) {
+    $searchBy = $_POST["course-offering-view"];
+} else {
+    $searchBy = "course"; 
+}
+
+
+/* If user searches by course */
+if ($searchBy == "course" && isset($_POST["findco-course"])) {
+    $coursenum = $_POST["findco-course"];
+    echo ' <div class="text-body"> 
+            <table class="co-table"> 
+                <tr>
+                    <th> Course Offer ID </th>
+                    <th> Term </th>
+                    <th> Year </th>
+                    <th> Enrollment </th>
+                </tr>';
+
+    $query = "SELECT * FROM courseoffer WHERE whichcourse='" . $coursenum . "'";
+    if (!empty($_POST["co-start-year"])) {
+        $startYear = $_POST["co-start-year"];
+        $query = $query . " AND year >= " . $startYear;
+    }
+    if (!empty($_POST["co-end-year"])) {
+        $endYear = $_POST["co-end-year"];
+        $query = $query . " AND year <= " . $endYear;
+    }
+    echo $query;
+    echo "<h4> Showing course offerings for " . $coursenum . "</h4>";
+    $result = mysqli_query($connection,$query);
+    if (!$result) {
+        die("databases query failed.") . mysqli_error($connection);
+    }
+            
+            
+            
+    while ($row = mysqli_fetch_assoc($result)) {
+                echo "<tr>";
+                echo "<td>" . $row["coid"] . "</td>";
+                echo "<td>" . $row["term"] .  "</td>";
+                echo "<td>" . $row["year"] .  "</td>";
+                echo "<td>" . $row["numstudent"] .  "</td>";
+                echo "</tr>";
+    }
+    echo '</table>     </div>';
+            
+            
+    mysqli_free_result($result);
+
+}
+
+else if ($searchBy == "ta") {
+    $tauserid = $_POST["findco-ta"];
+    $query_name = "SELECT firstname, lastname FROM ta WHERE tauserid='" . $tauserid . "'";
+    $result_name = mysqli_query($connection,$query_name);
+    if (!$result_name) {
+        die("databases query failed.") . mysqli_error($connection);
+    }
+    while ($row_name = mysqli_fetch_assoc($result_name)) {
+        echo "<h4> Showing course offerings for " . $row_name["firstname"] . " " . $row_name["lastname"] . "</h4>";
+    }
+    
+    echo ' <div class="text-body"> 
+            <table class="co-table"> 
+                <tr>
+                    <th> Course Name </th>
+                    <th> Course Number </th>
+                    <th> Course Offer ID </th>
+                    <th> Term </th>
+                    <th> Year </th>
+                    <th> Hours </th>
+                    <th> Loved/Hated </th>
+                </tr>';
+
+
+    /* query to find courses ta worked on */
+    $query = "SELECT coursename, coursenum, hasworkedon.coid, term, courseoffer.year, hours FROM hasworkedon, courseoffer, course 
+    WHERE hasworkedon.tauserid = '" . $tauserid . 
+    "' AND hasworkedon.coid=courseoffer.coid AND courseoffer.whichcourse=course.coursenum";
+    $result = mysqli_query($connection,$query);
+    if (!$result) {
+        die("databases query failed.") . mysqli_error($connection);
+    }
+
+
+    /* Store courses ta has loved and hated */
+    $query_loves = "SELECT coursenum FROM course, loves WHERE loves.lcoursenum = course.coursenum AND ltauserid='" . $tauserid . "'";
+    $result_loves = mysqli_query($connection, $query_loves);
+    if (!$result_loves) {
+        die("Database query on loved courses failed: " . mysqli_error($connection));
+    }
+    echo $query_loves;
+ 
+
+
+    $query_hates = "SELECT coursenum FROM course, hates WHERE hates.hcoursenum = course.coursenum AND htauserid='" . $tauserid . "'";
+    $result_hates = mysqli_query($connection, $query_hates);
+    if (!$result_hates) {
+        die("Database query on loved courses failed: " . mysqli_error($connection));
+    }
+
+            
+            
+            
+    while ($row = mysqli_fetch_assoc($result)) {
+        $curCourseNum = $row["coursenum"];
+                echo "<tr>";
+                echo "<td>" . $row["coursename"] . "</td>";
+                echo "<td>" . $curCourseNum . "</td>";
+                echo "<td>" . $row["coid"] . "</td>";
+                echo "<td>" . $row["term"] .  "</td>";
+                echo "<td>" . $row["year"] .  "</td>";
+                echo "<td>" . $row["hours"] .  "</td>";
+                echo "<td>";
+                $query_loop = "SELECT DISTINCT coursenum FROM loves WHERE coursenum='" . $curCourseNum . "'";
+                $result_loop = mysqli_query($connection, $query_loop);
+                if ($result_loop != null) {
+                    echo "!";
+                }
+                echo "</td>";
+                echo "</tr>";
+
+    }
+    echo '</table>     </div>';
+
+
+    
+    mysqli_free_result($result);
+    mysqli_free_result($result_name);
+    mysqli_free_result($result_loves);
+    mysqli_free_result($result_hates);
+            
+    
+}
+
+mysqli_close($connection);
+
+?>

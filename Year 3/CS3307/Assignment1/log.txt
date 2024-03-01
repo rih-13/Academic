@@ -1,0 +1,59 @@
+Last login: Thu Sep 28 16:28:18 on ttys001
+(base) rifah@MacBook-Air-3 ~ % ssh rhaque9@compute.gaul.csd.uwo.ca
+rhaque9@compute.gaul.csd.uwo.ca's password: 
+
+##############################################################################
+# Welcome to compute.gaul.csd.uwo.ca                                         #
+##############################################################################
+
+ATTENTION VISUAL STUDIO CODE USERS
+
+The SSH plugin in VS Code does not clean up after itself and will leave
+your processes stuck in memory.  Eventually, you will exceed the process
+limit and be unable to SSH in.
+
+To avoid this, be sure to SSH in periodically and kill your processes.
+You can execute:
+
+killall -u USERNAME
+
+where USERNAME is your username.  This will kill all processes you have
+in memory, including your current SSH session.
+
+Last login: Wed Sep 27 13:04:12 2023 from 198.2.97.166
+[rhaque9@compute ~]$ id -u
+2006511
+[rhaque9@compute ~]$ ssh -M -L 16511:cs3307.gaul.csd.uwo.ca:16511 rhaque9@cs3307.gaul.csd.uwo.ca
+The authenticity of host 'cs3307.gaul.csd.uwo.ca (129.100.21.145)' can't be established.
+ED25519 key fingerprint is SHA256:AH3xge9cvmr3L042AUvD+5YDemITj6hNwgiyN8ArMzM.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'cs3307.gaul.csd.uwo.ca' (ED25519) to the list of known hosts.
+[rhaque9@cs3307 ~]$ ls
+2211  3305  3307
+[rhaque9@cs3307 ~]$ ssh -N -L 16511:cs3307.gaul.csd.uwo.ca:16511 rhaque9@cs3307.gaul.csd.uwo.ca
+bind [127.0.0.1]:16511: Address already in use
+^C[rhaque9@cs3307 ~]$ ls
+2211  3305  3307
+[rhaque9@cs3307 ~]$ ssh -N -L 16511:cs3307.gaul.csd.uwo.ca:16511 rhaque9@cs3307.gaul.csd.uwo.ca
+bind [127.0.0.1]:16511: Address already in use
+^C[rhaque9@cs3307 ~]$ ssh -0 exit -S 16511:cs3307.gaul.csd.uwo.ca:16511
+unknown option -- 0
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command [argument ...]]
+[rhaque9@cs3307 ~]$ ssh -N -L 116511:cs3307.gaul.csd.uwo.ca:116511 rhaque9@cs3307.gaul.csd.uwo.ca
+Bad local forwarding specification '116511:cs3307.gaul.csd.uwo.ca:116511'
+[rhaque9@cs3307 ~]$ ssh -N -L 16511:cs3307.gaul.csd.uwo.ca:16511 rhaque9@cs3307.gaul.csdkgkj
+ssh: Could not resolve hostname cs3307.gaul.csdkgkj: Name or service not known
+[rhaque9@cs3307 ~]$ ssh -N -L 6511:cs3307.gaul.csd.uwo.ca:6511 rhaque9@cs3307.gaul.csd.uwo.ca
+
+
+^C[rhaque9@cs3307 ~]$ ^C
+[rhaque9@cs3307 ~]$ ssh -N -L 6511:cs3307.gaul.csd.uwo.ca:6511 rhaque9@cs3307.gaul.csd.uwo.ca
+^C[rhaque9@cs3307 ~]$ ^C
+[rhaque9@cs3307 ~]$ 

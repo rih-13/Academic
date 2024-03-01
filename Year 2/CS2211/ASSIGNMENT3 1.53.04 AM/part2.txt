@@ -1,0 +1,24 @@
+
+CS2211 Assignment 3 - Ria Haque 
+
+
+1: FILES
+1. You can use “ echo *”. The echo command is used to print to the screen, in this case it is not given any text and is told to print the contents of the current directory. 
+2. To be prompted before deletion, use “rm -i” and to not be prompted use “rm -f”, when the the two are used together you will not be prompted. 
+3. The mv command moves an existing file or directory, to a destination or even a new file. However, it only moves files and does not rename them. The rename command can be used to simply rename a file without moving it anywhere. 
+4. ELF means Executable and Linkable Format, files in binary format ex. executable files, core files, relocatable object files, etc.
+5. The du command measures the actual disk space used by the file, not the apparent file size. You can view the apparent file size by using du--apparent-size filename, which will now show 0. 
+
+2: DIRECTORIES
+1. You can use “mkdir -p grandparent/parent/child” instead
+2. Use single quotes to enclose the name of the directory when removing or making it, ex. mkdir ‘new dir here’ 
+3. Use ‘mkdir -m 500’ before the new directory name when you are making the directory 
+4. Use “cd -” to go back to most recent 
+5. Use “pushd +4” or “pushd -6” for sixth folder from the bottom of the stack, or reverse for the sixth folder from the top of the stack
+
+3; PERMISSIONS
+1. Use “chmod -v -v 700 filename” to see the changes being made
+2. Use “chmod --reference=file1 file2
+3. Use stat --format="%A %U %G" filename
+4. Grant them permission to write to the file, but not permission to write to the directory the file is in. They will be able to modify the contents of the file but not moving/remove or rename it. 
+5. It will make the file executable (for user, group, and other) if it is not already 

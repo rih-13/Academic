@@ -1,0 +1,52 @@
+Classroom 1,0,false,MC-17,Capacity of 7 students,0,310,346,MC
+Classroom 2,0,false,MC-105B,Capacity of 20 students,1,113,453,MC
+Classroom 3,0,false,MC-110,Lecture hall for CS2212 on Tuesdays,1,639,227,MC
+Far West stairway,4,false,MC-0ST1,ST1,0,54,543,MC
+West stairway,4,false,MC-0ST2,ST2,0,244,494,MC
+Middle stairway,4,false,MC-0ST3,ST3,0,768,359,MC
+Far West stairway,4,false,MC-1ST1,ST1,1,54,543,MC
+West stairway,4,false,MC-1ST2,ST2,1,244,494,MC
+Middle stairway,4,false,MC-1ST3,ST3,1,768,359,MC
+Far West stairway,4,false,MC-2ST1,ST1,2,54,543,MC
+West stairway,4,false,MC-2ST2,ST2,2,244,494,MC
+Middle stairway,4,false,MC-2ST3,ST3,2,768,359,MC
+Middle stairway,4,false,MC-3ST3,ST3,3,54,543,MC
+Middle Elevator,4,false,MC-0E3A,Elevator A,0,703,335,MC
+East Elevator,4,false,MC-0E3C,Elevator C,0,1011,483,MC
+Middle Elevator,4,false,MC-1E3A,Elevator A,1,703,335,MC
+East Elevator,4,false,MC-1E3C,Elevator C,1,1011,483,MC
+Middle Elevator,4,false,MC-2E3A,Elevator A,2,703,335,MC
+East Elevator,4,false,MC-2E3C,Elevator C,2,1011,483,MC
+East Elevator,4,false,MC-3E3C,Elevator C,3,1011,483,MC
+Washroom 1,1,false,MC-4B,Women,0,557,370,MC
+Washroom 2,1,false,MC-5B,Men,0,518,378,MC
+Washroom 3,1,false,MC-28E,Men,0,1048,512,MC
+Washroom 4,1,false,MC-4C,Unisex,0,527,327,MC
+Washroom 5,1,false,MC-100,Men,1,517,375,MC
+Washroom 6,1,false,MC-139,Women,1,1042,505,MC
+Washroom 7,1,false,MC-205,Women,2,507,360,MC
+Washroom 8,1,false,MC-278,Universal and accessible,2,1037,502,MC
+Washroom 9,1,false,MC-311,Men,3,507,360,MC
+Washroom 10,1,false,MC-388,Women,3,794,376,MC
+Entry/Exit Point 1,4,false,MC-EX1,Main,1,634,467,MC
+Entry/Exit Point 2,4,false,MC-EX2,West,1,269,527,MC
+Entry/Exit Point 3,4,false,MC-EX3,Far West,1,44,550,MC
+Entry/Exit Point 4,4,false,MC-EX11,East,1,767,403,MC
+Grad Club,2,true,MC-19,Eatery that sells coffee,0,607,210,MC
+Lab 1,5,false,MC-230,Capacity of 24,2,87,445,MC
+Lab 2,5,false,MC-235,Capacity of 24,2,141,411,MC
+Lab 3,5,false,MC-240,capacity of 27,2,319,354,MC
+Lab 4,5,false,MC-244,Capacity of 30,2,401,276,MC
+Lab 5,5,false,MC-342,Capacity of 20,3,460,266,MC
+Collaborative Space 1,5,false,MC-220,Capacity of 8,2,207,515,MC
+Collaborative Space 2,5,false,MC-239,Capacity of 4,2,213,423,MC
+Collaborative Space 3,5,false,MC-325,Capacity of 30,3,184,538,MC
+Classroom 1,0,false,-PAB 34.00,Capacity of 61,0,686,698,PAB
+Classroom 2,0,false,-PAB 36.00,Capacity of 35,0,536,660,PAB
+Classroom 3,0,false,-PAB 106.00,Capacity of 96,1,99,794,PAB
+Classroom 4,0,false,-PAB 117.00,Capacity of 56,1,227,403,PAB
+Classroom 5,0,false,-PAB 148.00,Capacity of 96,1,653,797,PAB
+Classroom 6,0,false,-PAB 150.00,Capacity of 48,1,490,765,PAB
+Classroom 1,0,false,NSC-1,Capacity of 384,0,258,883,NSC
+Classroom 2,0,false,NSC-7,Capacity of 158,0,151,756,NSC
+Classroom 3,0,false,NSC-145,Capacity of 690,1,692,893,NSC

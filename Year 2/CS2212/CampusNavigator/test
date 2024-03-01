@@ -1,0 +1,110 @@
+Classroom 1,0,false,MC-17,Capacity of 7 students,0,310,346,MC
+Classroom 2,0,false,MC-105B,Capacity of 20 students,1,113,453,MC
+Classroom 3,0,false,MC-110,Lecture hall for CS2212 on Tuesdays,1,639,227,MC
+Far West stairway,4,false,MC-0ST1,ST1,0,54,543,MC
+West stairway,4,false,MC-0ST2,ST2,0,244,494,MC
+Middle stairway,4,false,MC-0ST3,ST3,0,768,359,MC
+Far West stairway,4,false,MC-1ST1,ST1,1,54,543,MC
+West stairway,4,false,MC-1ST2,ST2,1,244,494,MC
+Middle stairway,4,false,MC-1ST3,ST3,1,768,359,MC
+Far West stairway,4,false,MC-2ST1,ST1,2,54,543,MC
+West stairway,4,false,MC-2ST2,ST2,2,244,494,MC
+Middle stairway,4,false,MC-2ST3,ST3,2,768,359,MC
+Middle stairway,4,false,MC-3ST3,ST3,3,54,543,MC
+Middle Elevator,4,false,MC-0E3A,Elevator A,0,703,335,MC
+East Elevator,4,false,MC-0E3C,Elevator C,0,1011,483,MC
+Middle Elevator,4,false,MC-1E3A,Elevator A,1,703,335,MC
+East Elevator,4,false,MC-1E3C,Elevator C,1,1011,483,MC
+Middle Elevator,4,false,MC-2E3A,Elevator A,2,703,335,MC
+East Elevator,4,false,MC-2E3C,Elevator C,2,1011,483,MC
+East Elevator,4,false,MC-3E3C,Elevator C,3,1011,483,MC
+Washroom 1,1,false,MC-4B,Women,0,557,370,MC
+Washroom 2,1,false,MC-5B,Men,0,518,378,MC
+Washroom 3,1,false,MC-28E,Men,0,1048,512,MC
+Washroom 4,1,false,MC-4C,Unisex,0,527,327,MC
+Washroom 5,1,false,MC-100,Men,1,517,375,MC
+Washroom 6,1,false,MC-139,Women,1,1042,505,MC
+Washroom 7,1,false,MC-205,Women,2,507,360,MC
+Washroom 8,1,false,MC-278,Universal and accessible,2,1037,502,MC
+Washroom 9,1,false,MC-311,Men,3,507,360,MC
+Washroom 10,1,false,MC-388,Women,3,794,376,MC
+Entry/Exit Point 1,4,false,MC-EX1,Main,1,634,467,MC
+Entry/Exit Point 2,4,false,MC-EX2,West,1,269,527,MC
+Entry/Exit Point 3,4,false,MC-EX3,Far West,1,44,550,MC
+Entry/Exit Point 4,4,false,MC-EX11,East,1,767,403,MC
+Grad Club,2,true,MC-19,Eatery that sells coffee,0,607,210,MC
+Lab 1,3,false,MC-230,Capacity of 24,2,87,445,MC
+Lab 2,3,false,MC-235,Capacity of 24,2,141,411,MC
+Lab 3,3,false,MC-240,capacity of 27,2,319,354,MC
+Lab 4,3,false,MC-244,Capacity of 30,2,401,276,MC
+Lab 5,3,false,MC-342,Capacity of 20 ,3,460,266,MC
+Collaborative Space 1,5,false,MC-220,Capacity of 8,2,207,515,MC
+Collaborative Space 2,5,false,MC-239,Capacity of 4,2,213,423,MC
+Collaborative Space 3,5,false,MC-325,Capacity of 30,3,184,538,MC
+Classroom 1,0,false,PAB-34,Capacity of 61,0,686,698,PAB
+Classroom 2,0,false,PAB-36,Capacity of 35,0,536,660,PAB
+Classroom 3,0,false,PAB-106,Capacity of 96,1,99,794,PAB
+Classroom 4,0,false,PAB-117,Capacity of 56,1,227,403,PAB
+Classroom 5,0,false,PAB-148,Capacity of 96,1,653,797,PAB
+Classroom 6,0,false,PAB-150,Capacity of 48,1,490,765,PAB
+South Stairs,4,false,PAB-0ST1,ST1,0,465,638,PAB
+North-East Stairs,4,false,PAB-0ST5,ST5,0,714,206,PAB
+Middle stairway,4,false,PAB-0ST8,ST8,0,470,456,PAB
+South Stairs,4,false,PAB-1ST1,ST1,1,383,763,PAB
+North-East Stairs,4,false,PAB-1ST5,ST5,1,641,290,PAB
+Middle stairway,4,false,PAB-1ST8,ST8,1,399,519,PAB
+North-East Stairs,4,false,PAB-2ST5,ST5,2,572,162,PAB
+Middle stairway,4,false,PAB-2ST10,ST10,2,364,419,PAB
+West stairway,4,false,PAB-3ST2,ST2,3,155,552,PAB
+Middle stairway,4,false,PAB-3ST10,ST10,3,449,449,PAB
+North Elevator,4,false,PAB-0ELB,Elevator B,0,373,246,PAB
+South Elevator,4,false,PAB-0ELA,Elevator A,0,567,557,PAB
+North Elevator,4,false,PAB-1ELB,Elevator B,1,300,328,PAB
+South Elevator,4,false,PAB-1ELA,Elevator A,1,499,673,PAB
+North Elevator,4,false,PAB-2ELB,Elevator B,2,271,206,PAB
+South Elevator,4,false,PAB-2ELA,Elevator A,2,463,523,PAB
+North Elevator,4,false,PAB-3ELA,Elevator A,3,545,528,PAB
+Washroom 1,1,false,PAB-18,Men,0,447,258,PAB
+Washroom 2,1,false,PAB-20,Women,0,493,253,PAB
+Washroom 3,1,false,PAB-131,Men,1,374,338,PAB
+Washroom 4,1,false,PAB-133,Women,1,421,341,PAB
+Washroom 5,1,false,PAB-154,Unisex,1,423,643,PAB
+Washroom 6,1,false,PAB-153,Unisex,1,389,659,PAB
+Washroom 7,1,false,PAB-219,Men,2,340,220,PAB
+Washroom 8,1,false,PAB-221,Women,2,388,210,PAB
+Washroom 9,1,false,PAB-305,Men,3,224,639,PAB
+Washroom 10,1,false,PAB-307,Women,3,230,600,PAB
+Entry/Exit Point 1,4,false,PAB-EX2,South-West,0,85,598,PAB
+Entry/Exit Point 2,4,false,PAB-EX5,North-East,0,743,212,PAB
+Entry/Exit Point 3,4,false,PAB-EX6,South-East,0,789,531,PAB
+Entry/Exit Point 4,4,false,PAB-EX1,South,1,470,99,PAB
+Entry/Exit Point 5,4,false,PAB-EX4,North ,1,477,105,PAB
+Classroom 1,0,false,NSC-1,Capacity of 384,0,258,883,NS
+Classroom 2,0,false,NSC-7,Capacity of 158,0,151,756,NS
+Classroom 3,0,false,NSC-145,Capacity of 690,1,692,893,NS
+Taylor Library stairs,4,false,NSC-0ST9,ST9,0,53,497,NS
+NSC 1/7 stairs,4,false,NSC-0ST7,ST7,0,327,744,NS
+Stairs near eatery,4,false,NSC-1ST2,ST2,1,355,822,NS
+Stairs near NSC-145,4,false,NSC-1ST5,ST5,1,622,943,NS
+Library stairs,4,false,NSC-2ST9,ST13,2,356,837,NS
+NSC 1/7 stairs,4,false,NSC-2ST7,ST1,2,439,1132,NS
+North Elevator,4,false,NSC-0ELC,Elevator C,0,318,415,NS
+South Elevator,4,false,NSC-0ELB,Elevator B,0,132,470,NS
+South Elevator #2,4,false,NSC-0ELA,Elevator A,0,108,480,NS
+South Elevator #2,4,false,NSC-1ELA,Elevator A,1,446,786,NS
+South Elevator #2,4,false,NSC-2ELA,Elevator A,2,429,812,NS
+Washroom 1,1,false,NSC-05,Men,0,230,676,NS
+Washroom 2,1,false,NSC-03,Women,0,251,716,NS
+Washroom 3,1,false,NSC-20A,Universal and accessible,0,311,759,NS
+Washroom 4,1,false,NSC-20B,Universal and accessible,0,301,741,NS
+Washroom 5,1,false,NSC-104,Men,1,508,824,NS
+Washroom 6,1,false,NSC-102,Women,1,517,870,NS
+Washroom 7,1,false,NSC-143,Women,1,695,1032,NS
+Washroom 8,1,false,NSC-147,Men,1,795,997,NS
+Washroom 9,1,false,NSC-219,Men,2,554,990,NS
+Washroom 10,1,false,NSC-220,Women,2,562,1030,NS
+Entry/Exit Point 1,4,false,NSC-EX1 ,West,1,492,1183,NS
+Entry/Exit Point 2,4,false,NSC-EX14,Main door near bus stop,1,677,1112,NS
+Entry/Exit Point 3,4,false,NSC-EX12,near NSC-145,1,789,1103,NS
+Nucleus Eatery,2,false,NSC-111,Cafeteria with Pizza Pizza and Tim hortons,1,443,937,NS
+Einsteins Café,2,false,NSC-106A,Usually very packed,1,525,707,NS
